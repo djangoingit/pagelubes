@@ -1,0 +1,604 @@
+/* ==========================================
+   PAGE LUBES
+   BASE.CSS
+   Part A
+========================================== */
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--white);
+
+    color:#222;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ---------- Typography ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-weight:700;
+
+    color:#111;
+
+    line-height:1.25;
+
+}
+
+h1{
+
+    font-size:4rem;
+
+}
+
+h2{
+
+    font-size:2.5rem;
+
+}
+
+h3{
+
+    font-size:1.8rem;
+
+}
+
+p{
+
+    color:#666;
+
+    margin-bottom:1rem;
+
+}
+
+.tamil{
+
+    font-family:"Noto Sans Tamil",sans-serif;
+
+}
+
+/* ---------- Container ---------- */
+
+.container{
+
+    max-width:var(--max-width);
+
+}
+
+/* ---------- Sections ---------- */
+
+section{
+
+    position:relative;
+
+    padding:90px 0;
+
+}
+
+/* ---------- Utilities ---------- */
+
+.text-warning{
+
+    color:var(--primary)!important;
+
+}
+
+.bg-dark{
+
+    background:var(--dark)!important;
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow)!important;
+
+}
+
+.rounded-xl{
+
+    border-radius:18px;
+
+}
+
+/* ---------- Top Bar ---------- */
+
+.top-bar{
+
+    background:var(--dark);
+
+    color:white;
+
+    font-size:.9rem;
+
+    padding:10px 0;
+
+}
+
+.top-bar i{
+
+    color:var(--primary);
+
+    margin-right:8px;
+
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar{
+
+    background:rgba(13,17,23,.96)!important;
+
+    backdrop-filter:blur(10px);
+
+    transition:var(--transition);
+
+    padding:16px 0;
+
+}
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.navbar-brand img{
+
+    height:60px;
+
+}
+
+.navbar-brand h4{
+
+    color:var(--primary);
+
+    margin:0;
+
+    letter-spacing:1px;
+
+    font-weight:700;
+
+}
+
+.navbar-brand small{
+
+    color:#ddd;
+
+    display:block;
+
+    margin-top:2px;
+
+}
+
+.navbar-nav .nav-link{
+
+    color:white!important;
+
+    margin-left:25px;
+
+    font-weight:500;
+
+    position:relative;
+
+}
+
+.navbar-nav .nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:var(--primary)!important;
+
+}
+
+.navbar-nav .nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.btn{
+
+    border-radius:50px;
+
+    padding:14px 32px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-warning{
+
+    background:var(--primary);
+
+    border:none;
+
+    color:#111;
+
+}
+
+.btn-warning:hover{
+
+    background:var(--primary-dark);
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-dark:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   BASE.CSS
+   Part B
+   Hero + Sections
+========================================== */
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:var(--dark);
+
+}
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center 35%;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            rgba(10,15,20,.78),
+            rgba(10,15,20,.72));
+
+    z-index:1;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:10;
+
+    max-width:720px;
+
+    color:white;
+
+}
+
+.hero-content h1{
+
+    color:white;
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    color:#E5E7EB;
+
+    font-size:1.15rem;
+
+    max-width:650px;
+
+}
+
+.hero-content .tamil{
+
+    margin-top:10px;
+
+    font-size:1.05rem;
+
+    color:#D1D5DB;
+
+}
+
+.hero .btn{
+
+    margin-right:15px;
+
+    margin-top:18px;
+
+}
+
+/* ---------- Section Headings ---------- */
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title h6{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:.9rem;
+
+    margin-bottom:12px;
+
+}
+
+.section-title h2{
+
+    margin-bottom:18px;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* ---------- Background Helpers ---------- */
+
+.bg-primary-dark{
+
+    background:var(--dark);
+
+    color:white;
+
+}
+
+.bg-secondary-dark{
+
+    background:var(--dark-2);
+
+    color:white;
+
+}
+
+.bg-light-gray{
+
+    background:#F8F9FA;
+
+}
+
+/* ---------- Common Spacing ---------- */
+
+.py-100{
+
+    padding-top:100px;
+
+    padding-bottom:100px;
+
+}
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+
+}
+
+/* ---------- Images ---------- */
+
+.image-cover{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.rounded-image{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ---------- Generic Content Blocks ---------- */
+
+.content-block{
+
+    padding:20px;
+
+}
+
+.content-block h3{
+
+    margin-bottom:20px;
+
+}
+
+.content-block p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ---------- Divider ---------- */
+
+.section-divider{
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--primary);
+
+    margin:20px auto 0;
+
+    border-radius:20px;
+
+}
+
+/* ---------- CTA Helpers ---------- */
+
+.cta-box{
+
+    padding:60px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        var(--dark),
+        var(--dark-2));
+
+    color:white;
+
+}
+
+.cta-box h2{
+
+    color:white;
+
+}
+
+.cta-box p{
+
+    color:#D1D5DB;
+
+}
+
+/* ==========================================
+   TEXT SELECTION
+========================================== */
+
+::selection{
+    background:var(--primary);
+    color:#111;
+}
+
+::-moz-selection{
+    background:var(--primary);
+    color:#111;
+}

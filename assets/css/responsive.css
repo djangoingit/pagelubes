@@ -1,0 +1,174 @@
+/* ==========================================
+   RESPONSIVE.CSS
+========================================== */
+
+@media (max-width:1200px){
+
+.hero-content h1{
+
+    font-size:3.3rem;
+
+}
+
+}
+
+
+@media (max-width:992px){
+
+.hero{
+
+    min-height:75vh;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    margin:auto;
+
+}
+
+.hero-content h1{
+
+    font-size:2.8rem;
+
+}
+
+.navbar-brand img{
+
+    height:50px;
+
+}
+
+.section-padding{
+
+    padding:80px 0;
+
+}
+
+.cta-section{
+
+    padding:45px;
+
+}
+
+}
+
+
+@media (max-width:768px){
+
+.top-bar{
+
+    text-align:center;
+
+}
+
+.top-bar .text-end{
+
+    text-align:center!important;
+
+}
+
+.hero{
+
+    min-height:70vh;
+
+}
+
+.hero-content h1{
+
+    font-size:2.3rem;
+
+}
+
+.hero-content p{
+
+    font-size:1rem;
+
+}
+
+.hero .btn{
+
+    display:block;
+
+    margin:12px auto;
+
+    width:220px;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+}
+
+.card-product img{
+
+    height:220px;
+
+}
+
+.gallery-item img{
+
+    height:240px;
+
+}
+
+.whatsapp-float{
+
+    width:58px;
+
+    height:58px;
+
+    right:18px;
+
+    bottom:18px;
+
+}
+
+.back-to-top{
+
+    right:20px;
+
+    bottom:90px;
+
+}
+
+}
+
+
+@media (max-width:576px){
+
+.hero-content h1{
+
+    font-size:2rem;
+
+}
+
+.section-padding{
+
+    padding:65px 0;
+
+}
+
+.navbar-brand h4{
+
+    font-size:1.2rem;
+
+}
+
+.navbar-brand small{
+
+    font-size:.75rem;
+
+}
+
+.cta-section{
+
+    padding:30px;
+
+}
+
+}

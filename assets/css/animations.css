@@ -1,0 +1,115 @@
+/* ==========================================
+   ANIMATIONS.CSS
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+.fade-in{
+
+    animation:fadeIn .8s ease forwards;
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .7s ease forwards;
+
+}
+
+.float{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+.hero-content{
+
+    animation:fadeUp .9s ease;
+
+}
+
+.card-product:hover,
+.card-brand:hover,
+.card-industry:hover{
+
+    transition:.35s;
+
+}
